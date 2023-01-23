@@ -1,6 +1,6 @@
 @font-face {
     font-family: "TimeBurner";
-    src: url('../../assets/TimeburnerBold-peGR.ttf');
+    src: url('/assets/TimeburnerBold-peGR.ttf');
 }
 
 * {
@@ -56,11 +56,11 @@ section {
 }
 
 section:nth-of-type(2) {
-  background-image: url('../../assets/FundoAboutme.jpg');
+  background-image: url('/assets/FundoAboutme.jpg');
 }
 
 section:nth-of-type(4) {
-  background-image: url('../../assets/Fundo.png');
+  background-image: url('/assets/Fundo.png');
 }
 
 html, body {

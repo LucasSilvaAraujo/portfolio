@@ -6,24 +6,24 @@ const logo = document.querySelector('.logo');
 const travel = document.querySelector('.travel');
 
 operative.addEventListener('mouseover', () => {
-  document.getElementById('d1').style.backgroundImage = "url('../../assets/operative.jpg')";
-  document.getElementById('d2').style.backgroundImage = "url('../../assets/operative.jpg')";
-  document.getElementById('d3').style.backgroundImage = "url('../../assets/operative.jpg')";
-  document.getElementById('d4').style.backgroundImage = "url('../../assets/operative.jpg')";
+  document.getElementById('d1').style.backgroundImage = "url('/assets/operative.jpg')";
+  document.getElementById('d2').style.backgroundImage = "url('/assets/operative.jpg')";
+  document.getElementById('d3').style.backgroundImage = "url('/assets/operative.jpg')";
+  document.getElementById('d4').style.backgroundImage = "url('/assets/operative.jpg')";
 });
 
 travel.addEventListener('mouseover', () => {
-  document.getElementById('d1').style.backgroundImage = "url('../../assets/travel2.png')";
-  document.getElementById('d2').style.backgroundImage = "url('../../assets/travel2.png')";
-  document.getElementById('d3').style.backgroundImage = "url('../../assets/travel2.png')";
-  document.getElementById('d4').style.backgroundImage = "url('../../assets/travel2.png')";
+  document.getElementById('d1').style.backgroundImage = "url('/assets/travel2.png')";
+  document.getElementById('d2').style.backgroundImage = "url('/assets/travel2.png')";
+  document.getElementById('d3').style.backgroundImage = "url('/assets/travel2.png')";
+  document.getElementById('d4').style.backgroundImage = "url('/assets/travel2.png')";
 });
 
 logo.addEventListener('mouseover', () => {
-  document.getElementById('d1').style.backgroundImage = "url('../../assets/telatablet.png')";
-  document.getElementById('d2').style.backgroundImage = "url('../../assets/telatablet.png')";
-  document.getElementById('d3').style.backgroundImage = "url('../../assets/telatablet.png')";
-  document.getElementById('d4').style.backgroundImage = "url('../../assets/telatablet.png')";  
+  document.getElementById('d1').style.backgroundImage = "url('/assets/telatablet.png')";
+  document.getElementById('d2').style.backgroundImage = "url('/assets/telatablet.png')";
+  document.getElementById('d3').style.backgroundImage = "url('/assets/telatablet.png')";
+  document.getElementById('d4').style.backgroundImage = "url('/assets/telatablet.png')";  
 });
 
 operative.addEventListener('mouseover', () => {
