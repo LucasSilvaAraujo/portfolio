@@ -1,0 +1,741 @@
+@font-face {
+    font-family: "TimeBurner";
+    src: url('/assets/TimeburnerBold-peGR.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  font-family: "TimeBurner";
+}
+
+.cotainer {
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(rgba(0,0,0,0.7), transparent);
+  z-index: 5;
+}
+
+nav ul li{
+  display: inline-block;
+  z-index: 5;
+}
+
+nav ul li a{
+  text-decoration: none;
+  padding: 5px 0;
+  display: inline-block;
+  margin: 15px 10px;
+  color: whitesmoke;
+  font-weight: 700;
+  border-bottom: 3px solid transparent;
+  transition: all 0.25s ease-in-out;
+  z-index: 5;
+}
+
+nav ul li a:hover{
+  border-bottom: 3px solid whitesmoke;
+  z-index: 5;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-of-type(2) {
+  background-image: url('/assets/FundoAboutme.jpg');
+}
+
+section:nth-of-type(4) {
+  background-image: url('/assets/Fundo.png');
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(14, 13, 13);
+  color: #000;
+  line-height: 1.6;
+  position: relative;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+}
+
+.line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  -webkit-animation: drop 7s 0s infinite;
+          animation: drop 7s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.line:nth-child(1) {
+  margin-left: -25%;
+}
+.line:nth-child(1)::after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.line:nth-child(3) {
+  margin-left: 25%;
+}
+.line:nth-child(3)::after {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+
+label {
+  font-family: "TimeBurner";
+}
+
+.l1 {
+  position: absolute;
+  font-size: 200px;
+  letter-spacing: 50px;
+  color: antiquewhite;
+}
+
+#redessociais {
+  position: absolute;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.github {
+  bottom: 1%;
+  right: 5%;
+  width: 2%;
+}
+
+.linkedin {
+  bottom: 1%;
+  right: 8%;
+  width: 2%;
+}
+
+.instagram {
+  bottom: 1%;
+  right: 2%;
+  width: 2%;
+}
+
+#redessociais:hover {
+  transform: scale(1.5);
+}
+
+.text {
+  position: absolute;
+  font-size: 60px;
+  top: 15%;
+  left: 40%;
+  letter-spacing: 10px;
+  color: lightseagreen;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s, cursor .5s step-end infinite alternate;
+}
+
+.sobremim {
+  position: absolute;
+  font-size: 80px;
+  top: 30%;
+  left: 18%;
+  letter-spacing: 5px;
+  color: antiquewhite;
+}
+
+.caixatexto {
+  position: absolute;
+  top: 34%;
+  left: 15%;
+  background-color: rgba(20, 20, 20, 0.7);
+  border: 1px solid;
+  border-color: antiquewhite;
+  height: 240px;
+  width: 500px;
+}
+
+.textosobremim {
+  color: antiquewhite;
+  font-size: 20px;
+  margin: 10px;
+  text-align: justify;
+}
+
+.download {
+  position: absolute;
+  top: 41%;
+  left: 24%;
+  height: 40px;
+  width: 140px;
+  background: rgba(20, 20, 20, 0.7);
+  font-style: normal;
+  font-weight: 50;
+  font-size: 20px;
+  text-align: center;
+  line-height: 18px;
+  color: #FFFFFF;
+  border-color: antiquewhite;
+  cursor: pointer;
+}
+
+.oclin {
+  position: absolute;
+  top: 32%;
+  left: 60%;
+  height: 10%;
+  width: 20%;
+  border: 3px solid;
+  border-color: rgba(20, 20, 20, 0.7);
+}
+
+#main {
+  height: 85vh;
+  width: 100vw;
+  position: relative;
+}
+
+.operative {
+  position:absolute;
+  top: 55%;
+  left: 60%;
+  z-index: 4;
+}
+
+.travel {
+  position:absolute;
+  top: 59%;
+  left: 39%;
+  height: 8%;
+  z-index: 4;
+}
+
+.logo {
+  position:absolute;
+  top: 60%;
+  left: 12%;
+  height: 5%;
+  z-index: 4;
+}
+
+#projetos{
+  transition: .3s ease;
+}
+
+#projetos:hover {
+  transform: scale(1.5);
+}
+
+.d1 {
+  position: absolute;
+  background-image: url('/assets/projects.jpg');
+  background-size: 2700px 1500px;
+
+  height: 30vh;
+  width: 15vw;
+
+  background-position: 0 50%;
+
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  animation: dd1 10s infinite, dd12 10s infinite;
+  animation-delay: 4s, 14s;
+}
+
+.projecttitle {
+  position: absolute;
+  top: 52.8%;
+  left: 12%;
+  z-index: 4;
+  color: antiquewhite;
+  font-size: 120px;
+}
+
+.contacts {
+  position: absolute;
+  top: 81.8%;
+  left: 12%;
+  z-index: 4;
+  color: antiquewhite;
+  font-size: 120px;
+}
+
+.mailme {
+  position: absolute;
+  top: 86.5%;
+  left: 19%;
+  z-index: 4;
+  color: antiquewhite;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.contactinfo {
+  position: absolute;
+  top: 86.5%;
+  left: 59.5%;
+  z-index: 4;
+  color: antiquewhite;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+#info {
+  width: 3%;
+}
+
+.map {
+  position: absolute;
+  top: 89.5%;
+  left: 51%;
+}
+
+.call {
+  position: absolute;
+  width: 1%;
+  top: 92.5%;
+  left: 51%;
+}
+
+.email {
+  position: absolute;
+  width: 1%;
+  top: 95.5%;
+  left: 51%;
+}
+
+.copyright {
+  position: absolute;
+  width: 1%;
+  top: 99%;
+  left: 1%;
+}
+
+.local {
+  position: absolute;
+  top: 90%;
+  left: 54.5%;
+  z-index: 4;
+  color: antiquewhite;
+  font-size: 20px;
+}
+
+.numero {
+  position: absolute;
+  top: 93%;
+  left: 54.5%;
+  z-index: 4;
+  color: antiquewhite;
+  font-size: 20px;
+}
+
+.meuemail {
+  position: absolute;
+  top: 96%;
+  left: 54.5%;
+  z-index: 4;
+  color: antiquewhite;
+  font-size: 20px;
+}
+
+
+.meunome {
+  position: absolute;
+  top: 98.99%;
+  left: 2.2%;
+  z-index: 4;
+  color: antiquewhite;
+}
+
+.nome{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 8px;
+  width: 350px;
+  height: 30px;
+  margin-top: 25px;
+  font-size: 20px;
+  text-align: justify;
+  vertical-align: center;
+  /* Neutras/Fundo */
+
+  background: rgba(20, 20, 20, 0.7);
+  border: 2px solid antiquewhite;
+  border-radius: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color:#FFFFFF;
+  z-index: 5;
+  top: 87.5%;
+  left: 13.5%;
+  
+}
+
+.message{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 8px;
+  width: 350px;
+  height: 120px;
+  margin-top: 25px;
+  font-size: 20px;
+  text-align: justify;
+  /* Neutras/Fundo */
+
+  background: rgba(20, 20, 20, 0.7);
+  border: 2px solid antiquewhite;
+  border-radius: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color:#FFFFFF;
+  z-index: 5;
+
+  top: 90%;
+  left: 13.5%;
+  
+}
+
+.e-mail{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 8px;
+  width: 350px;
+  height: 30px;
+  margin-top: 25px;
+  font-size: 20px;
+  text-align: justify;
+  vertical-align: center;
+  /* Neutras/Fundo */
+
+  background: rgba(20, 20, 20, 0.7);
+  border: 2px solid antiquewhite;
+  border-radius: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color:#FFFFFF;
+  z-index: 5;
+  top: 88.7%;
+  left: 13.5%;
+  
+}
+
+.d2 {
+  position: absolute;
+  background-image: url('/assets/projects.jpg');
+  background-size: 2700px 1500px;
+
+  height: 50vh;
+  width: 25vw;
+
+  background-position: -10vw 50%;
+  left: 10vw;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  animation: dd2 10s infinite;
+  animation-delay: 4s;
+}
+.d3 {
+  position: absolute;
+  background-image: url('/assets/projects.jpg');
+  background-size: 2700px 1500px;
+  overflow: hidden;
+
+  height: 100vh;
+  width: 40vw;
+  left: 25vw;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  background-position: -35vw 50%;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  animation: dd3 10s infinite;
+  animation-delay: 4s;
+}
+.d4 {
+  position: absolute;
+  overflow: hidden;
+  background-image: url('/assets/projects.jpg');
+  background-size: 2700px 1500px;
+
+  height: 80vh;
+  width: 25vw;
+  left: 60vw;
+  background-position: -70vw 50%;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  animation: dd4 10s infinite;
+  animation-delay: 4s;
+}
+
+.submit {
+  position: absolute;
+  top: 95%;
+  left: 19%;
+  height: 40px;
+  width: 140px;
+  background: rgba(20, 20, 20, 0.7);
+  font-style: normal;
+  font-weight: 50;
+  font-size: 20px;
+  text-align: center;
+  line-height: 18px;
+  color: #FFFFFF;
+  border-color: antiquewhite;
+  cursor: pointer;
+}
+
+@keyframes dd1 {
+  0% {
+  }
+  50% {
+    width: 95vw;
+  }
+}
+@keyframes dd12 {
+  0% {
+  }
+  50% {
+    background-position: Calc(0vw - 40px) 50%;
+  }
+}
+@keyframes dd2 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-10vw - 40px) 50%;
+  }
+}
+@keyframes dd3 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-35vw - 40px) 50%;
+  }
+}
+@keyframes dd4 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-70vw - 40px) 50%;
+  }
+}
+
+
+@-webkit-keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+@keyframes cursor {
+  50% { border-color: transparent}
+  
+}
+
+@keyframes typing {
+
+  from {width: 0}
+  
+}
+
+@media (max-width: 800px) {
+  .l1 {
+      font-size: 80px;
+      letter-spacing: 20px;
+  } 
+  
+  .github {
+    right: 10%;
+    width: 6%;
+  }
+  
+  .linkedin {
+    right: 18%;
+    width: 6%;
+  }
+  
+  .instagram {
+    right: 2%;
+    width: 6%;
+  }
+
+  .text {
+    top: 13.5%;
+    left: 32%;
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+  .sobremim {
+    font-size: 60px;
+  }
+
+  .caixatexto {
+    left: 5%;
+    height: 300px;
+    width: 400px;
+  }
+
+  .download {
+    top: 44%;
+    left: 32%;
+  }
+
+  .logo {
+    top: 53%;
+    left: 30%;
+  }
+
+  .travel {
+    top: 60%;
+    left: 15%;
+  }
+
+  .operative {
+    top: 63%;
+    left: -30%;
+  }
+  
+  #projetos:hover {
+    transform: scale(1.2);
+  }
+
+  .oclin {
+    opacity: 0;
+  }
+
+  .projecttitle {
+    top: 51.7%;
+    left: 76%;
+    font-size: 25px;
+  }
+
+  .contacts {
+    font-size: 50px;
+    top: 84.3%;
+  }
+
+  #pc {
+    opacity: 0;
+  }
+
+  .contactinfo {
+    left: 10%;
+  }
+
+  #info {
+    left: 5%;
+  }
+
+  #infos {
+    font-size: 15px;
+    left: 10%;
+  }
+
+  .meuemail {
+    top: 95.4%
+  }
+
+  .numero {
+    top: 92.4%;
+  }
+
+  .local {
+    top: 89.4%;
+  }
+
+  .meunome {
+    font-size: 5%;
+    top: 98.99%;
+  }
+
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+  .l1 {
+      font-size: 120px;
+      letter-spacing: 20px;
+  }
+}
