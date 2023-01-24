@@ -245,8 +245,8 @@ label {
 
 .operative {
   position:absolute;
-  top: 55%;
-  left: 60%;
+  top: 61%;
+  left: 66%;
   z-index: 4;
 }
 
@@ -261,7 +261,7 @@ label {
 .logo {
   position:absolute;
   top: 60%;
-  left: 12%;
+  left: 20%;
   height: 5%;
   z-index: 4;
 }
@@ -620,6 +620,27 @@ label {
   
 }
 
+@media (max-width: 1680px) {
+  .projecttitle {
+    top: 53.4%;
+    left: 12%;
+    font-size: 95px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .projecttitle {
+    top: 52.2%;
+    left: 10.5%;
+    font-size: 95px;
+  }
+
+  .download {
+    top: 44%;
+    left: 27%;
+  }
+}
+
 @media (max-width: 800px) {
   .l1 {
       font-size: 80px;
@@ -731,11 +752,4 @@ label {
     top: 98.99%;
   }
 
-}
-
-@media (max-width: 1000px) and (min-width: 800px) {
-  .l1 {
-      font-size: 120px;
-      letter-spacing: 20px;
-  }
 }
