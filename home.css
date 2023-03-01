@@ -10,12 +10,27 @@
   font-family: "TimeBurner";
 }
 
-.cotainer {
+html {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.container {
   display: inline-block;
 }
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
 }
 
 nav {
@@ -76,7 +91,6 @@ body {
   line-height: 1.6;
   position: relative;
   font-family: sans-serif;
-  overflow: hidden;
 }
 
 .lines {
@@ -170,17 +184,17 @@ label {
 }
 
 .text {
-  position: absolute;
+  position: relative;
   font-size: 60px;
-  top: 15%;
-  left: 40%;
+  left: 0%;
+  margin-top: 300px;
   letter-spacing: 10px;
   color: lightseagreen;
   border-right: 5px solid;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s, cursor .5s step-end infinite alternate;
+  animation: typing 2s steps(9), cursor .5s step-end infinite alternate;
 }
 
 .sobremim {
