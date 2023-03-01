@@ -653,7 +653,73 @@ label {
     top: 44%;
     left: 27%;
   }
+
+  .submit {
+    top: 98.5%;
+    width: 100px;
+    height: 35px;
+  }
+
+  .contacts {
+    top: 85%;
+    left: 8%;
+  }
+
+  .mailme {
+    top: 91%;
+    left: 19%;
+    font-size: 22px; 
+  }
+
+  .contactinfo {
+    top: 91%;
+    left: 55%;
+  }
+
+  .map {
+    top: 93%;
+  }
+
+  .local {
+    top: 93.5%;
+  }
+
+  .call {
+    top: 95%;
+  }
+
+  .numero {
+    top: 95.5%;
+  }
+
+  .email {
+    top: 97%;
+  }
+
+  .meuemail {
+    top: 97.5%;
+  }
+
+  .nome {
+    top: 91.5%;
+    left: 13%;
+    width: 20%;
+  }
+
+  .e-mail {
+    top: 93%;
+    left: 13%;
+    width: 20%;
+  }
+
+  .message {
+    top: 94.5%;
+    left: 13%;
+    width: 20%;
+    height: 2.5%;
+  }
 }
+
 
 @media (max-width: 800px) {
   .l1 {
